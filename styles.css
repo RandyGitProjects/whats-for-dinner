@@ -19,26 +19,60 @@ body{
     text-align: left;
 }
 
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    align-content: flex-start;
+/*This is header whats for dinner?*/
+h2{
+    margin-left: 40px;
+    padding-top: 50px;
+    font-size: 40px;                            
 }
 
 .select-meal,
 .display{
     background-color: rgba(225, 225, 225, .9);
-    height: 275px;
-    width: 375px;
+    height: 535px;
+    width: 625px;
     border: solid 2px black;
     font-family: 'Roboto', sans-serif;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
 }
-
-.form{
+/*This form class moves the display & select-meal*/
+.form, 
+.display{
+    margin-top: 40px;
     display: flex;
     justify-content: space-around;
+    align-items: flex-end;
+    align-content: center;
+}
+
+/*This wrapper class moves the radio buttons*/
+.wrapper{
+    height: 300px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-end;
+    justify-content: space-between;
+}
+/*This label class moves the labels*/
+label {
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: -60px;
+}
+
+#button{
+    height: 45px;
+    width: 200px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0fb9b1;
+    border: none;
+    border-radius: 10px;
+}
+.cookpot{
+    margin: 175px;
+    height: 200px;
+    width: 200px;
 }
