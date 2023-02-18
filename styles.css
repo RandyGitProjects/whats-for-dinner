@@ -19,7 +19,6 @@ body{
     text-align: left;
 }
 
-/*This is header whats for dinner?*/
 h2{
     margin-left: 40px;
     padding-top: 50px;
@@ -71,8 +70,13 @@ label {
     border: none;
     border-radius: 10px;
 }
+
 .cookpot{
     margin: 175px;
     height: 200px;
     width: 200px;
+}
+
+.hidden {
+    display: none;
 }
