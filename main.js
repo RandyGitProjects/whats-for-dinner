@@ -47,36 +47,59 @@ var dessert = [
 "Croissants",
 "Eclairs",
 ]
-// Query buttons
-var sideRadioButton = document.querySelector(".side-radio-button");
-var mainRadioButton = document.querySelector(".main-radio-button");
-var dessertRadioButton = document.querySelector(".dessert-radio-button");
-var entireRadioButton = document.querySelector(".entire-radio-button");
-var cookButton = document.querySelector("#button");
-var cookPot = document.querySelector(".cookpot");
-var display = document.querySelector('.display');
 
-//Add event listeners
+var sideRadioButton = document.querySelector('.side-radio-button');
+var mainRadioButton = document.querySelector('.main-radio-button');
+var dessertRadioButton = document.querySelector('.dessert-radio-button');
+var entireRadioButton = document.querySelector('.entire-radio-button');
+var cookButton = document.querySelector('#button');
+var clearButton = document.querySelector('.clear-button');
+var cookPot = document.querySelector('.cookpot');
+var randomMealDisplay = document.querySelector('.random-meal-display');
+var youShouldMake = document.querySelector('.should-make')
+
 sideRadioButton.addEventListener('click', randomSideMeal);
 mainRadioButton.addEventListener('click', randomMainMeal);
 dessertRadioButton.addEventListener('click', randomDessertMeal);
 cookButton.addEventListener('click', showRandomMeal);
+clearButton.addEventListener('click', deleteSelectedMeal)
 
-//Create functions for event listeners
-selectedMeal.innerHTML = ''
+function randomDessertMeal() {
+    var randomIndex = Math.floor(Math.random() * dessert.length)
+    return selectedMeal = dessert[randomIndex];
+}
+
+function randomMainMeal() {
+    var randomIndex = Math.floor(Math.random() * mains.length)
+    return selectedMeal = mains[randomIndex];
+}
+
+function randomSideMeal() {
+    var randomIndex = Math.floor(Math.random() * side.length)
+    return selectedMeal = side[randomIndex];
+}
+
 function showRandomMeal() {
-    cookPot.classList.add('hidden')
-    display.classList.remove('hidden')
+    randomMealDisplay.classList.remove('hidden')
+    var selectedMeal = '';
     if (sideRadioButton.checked) {
-        display.innerHTML = `<h2>${selectedMeal}<h2/>`
+        selectedMeal = randomSideMeal();
+        clearButton.classList.remove('hidden')
+        cookPot.classList.add('hidden')
+        randomMealDisplay.innerHTML = `<h4 class="should-make"><em>You should make:</em></h4><h2>${selectedMeal}!</h2>`
     } else if (mainRadioButton.checked) {
-        display.innerHTML = `<h2>${selectedMeal}<h2/>`
+        selectedMeal = randomMainMeal();
+        cookPot.classList.add('hidden')
+        clearButton.classList.remove('hidden')
+        randomMealDisplay.innerHTML = `<h4 class="should-make"><em>You should make:</em></h4><h2>${selectedMeal}!</h2>`
     } else if (dessertRadioButton.checked) {
-        display.innerHTML = `<h2>${selectedMeal}<h2/>`
+        selectedMeal = randomDessertMeal();
+        cookPot.classList.add('hidden')
+        clearButton.classList.remove('hidden')
+        randomMealDisplay.innerHTML = `<h4 class="should-make"><em>You should make:</em></h4><h2>${selectedMeal}!</h2>`
     }
 }
 
-//These functions generate random meals for each side, main, and dessert meals and puts it into a empty string called selectedMeal
 function randomDessertMeal() {
     var randomIndex = Math.floor(Math.random() * dessert.length)
     return selectedMeal = dessert[randomIndex]
@@ -90,4 +113,12 @@ function randomMainMeal() {
 function randomSideMeal() {
     var randomIndex = Math.floor(Math.random() * side.length)
     return selectedMeal = side[randomIndex]
+}
+
+function deleteSelectedMeal() {
+    if (selectedMeal) {
+        randomMealDisplay.classList.add('hidden')
+        clearButton.classList.add('hidden')
+        cookPot.classList.remove('hidden')
+    } 
 }
