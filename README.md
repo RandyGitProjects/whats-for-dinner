@@ -12,7 +12,7 @@
 * Press enter to make a local copy clone and then you're done.
 
 ### Preview of App:
-
+![giphy](https://user-images.githubusercontent.com/105993432/219986480-a763d1b0-0bef-4156-a331-dc78d0fc03e1.gif)
 
 ### Context:
 * This project took approximately 19 hours to complete. This majority of the time was spent researching html, css, and working with the flexbox. I'm currently in week 3 of a 6 month intensive program through Turing School Software and Design
