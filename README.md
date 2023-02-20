@@ -1,51 +1,31 @@
-# What's for Dinner?
-
-## Overview
-
-What's for dinner? The ultimate question. You will be building an app that helps users choose a recipe and put together meals. 
-
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
-
-The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/dinner.html). 
-
-## Learning Goals
-
-- Gain experience building an application that utilizes HTML, CSS and JavaScript
-- Write HTML and CSS to match a provided comp
-- Understand how to listen to and respond to user events
-- Individualize your programming skill set
-
-## Setup
-
-- Fork this project to your own Github account
-- Clone the repository to your local machine
-- `cd` into the project
-- Read this README thoroughly, then begin working!
-
-______________________________________________________  
-# README Template  
-Before turning this project in, erase this line and everything above it and fill in the info below.  
-______________________________________________________  
-
 # What's for Dinner? 
 
 ### Abstract:
-[//]: <> (Briefly describe what you built and its features. What problem is the app solving? How does this application solve that problem?)
+* I was able to implement functionality that allows a user to click a radio button and display a dish idea to make for dinner. Also, I was able to create functionality that allowed the user to clear the dish idea they chose and pick another one.
 
 ### Installation Instructions:
-[//]: <> (What steps does a person have to take to get your app cloned down and running?)
+* The person first has to find the repo RandyGitProjects/whats-for-dinner on       github.
+* Above the list of files will be a green button called code with a dropdown menu.
+* Copy down the repo of the URL using the SSH key and click the two little squares to  the right of the URL.
+* Open your terminal and find the directory where you would like to clone down the repo.
+* After the desired directory is found you want to type git clone and paste the URL you copied from github.
+* Press enter to make a local copy clone and then you're done.
 
 ### Preview of App:
-[//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
+
 
 ### Context:
-[//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
+* This project took approximately 19 hours to complete. This majority of the time was spent researching html, css, and working with the flexbox. I'm currently in week 3 of a 6 month intensive program through Turing School Software and Design
 
 ### Contributors:
-[//]: <> (Who worked on this application? Link to their GitHubs.)
+* The main contributor to this application are:
+* Randy Cisneros https://github.com/RandyGitProjects
 
 ### Learning Goals:
-[//]: <> (What were the learning goals of this project? What tech did you work with?)
+* My goal was to gain experience and utilize HTML, CSS and Javascript to mainuplate the page I was creating. 
+* Another goal was to gain more experience and understanding of how to listen to and respond to user events. 
 
 ### Wins + Challenges:
-[//]: <> (What are 2-3 wins you have from this project? What were some challenges you faced - and how did you get over them?)
+* A win for this project was getting the buttons to work correctly using the event listeners.
+* The biggest win and challenge was understanding where to put div's and images in the html. Also another big win was understanding that I need a .hidden class to display none inside the CSS. This drastically increased the functionality of the page itself. 
+
